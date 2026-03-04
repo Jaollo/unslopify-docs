@@ -1,0 +1,42 @@
+---
+title: Unslopify Windows
+description: An open-source toolkit that removes Windows 11 bloat, enhances your UX, and configures FOSS tools.
+template: splash
+hero:
+  tagline: Un-Slopify your Windows. Remove Copilot, Recall, telemetry, Edge, OneDrive, and 30+ pieces of bloatware -- then enhance your UX with opinionated defaults.
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
+      variant: primary
+    - text: View on GitHub
+      link: https://github.com/Jaollo/unslopify
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Three Phases
+
+<CardGrid stagger>
+  <Card title="Phase 1: Unslopify" icon="warning">
+    18 scripts that remove Windows bloat: Copilot, Recall, telemetry, Edge, OneDrive, AppX bloatware, GPU caches, and more. Launched via console menu or WPF GUI.
+  </Card>
+  <Card title="Phase 2: Enhance" icon="setting">
+    9 standalone scripts that improve your UX: privacy hardening, taskbar cleanup, Explorer tweaks, dark mode, power plan, and more.
+  </Card>
+  <Card title="Phase 3: Intelligence" icon="document">
+    Agent-agnostic reference files and a system scanner. Any AI coding agent can consume these to understand and configure your system.
+  </Card>
+  <Card title="FOSS Toolkit" icon="star">
+    Curated catalog of 20+ open-source tools with winget install commands, config paths, and recommended settings.
+  </Card>
+</CardGrid>
+
+## Design Principles
+
+- **Offline-ready** -- no internet required for debloating
+- **Safe by default** -- every script follows Scan, Report, Confirm, Execute
+- **Reversible where possible** -- registry changes auto-backed up, services can be re-enabled
+- **AI-friendly** -- structured for AI-guided execution with Phase 3 system intelligence
