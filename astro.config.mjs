@@ -3,6 +3,8 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
+	site: 'https://jaollo.github.io',
+	base: '/unslopify-docs',
 	integrations: [
 		starlight({
 			title: 'Unslopify',
