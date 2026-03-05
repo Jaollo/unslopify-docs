@@ -9,8 +9,8 @@ Phase 1 removes the slop. All scripts require admin and are launched via the con
 
 | # | Script | What it does |
 |---|--------|-------------|
-| 00 | **Quick System Scan** | Quick system info + debloat status (read-only, no admin) |
-| 01 | **Deep Telemetry & CBS** | Uses TrustedInstaller to rip out CBS telemetry packages (reboot required) |
+| 01 | **Quick System Scan** | Quick system info + debloat status (read-only, no admin) |
+| 02 | **Deep Telemetry & CBS** | Uses TrustedInstaller to rip out CBS telemetry packages (reboot required) |
 | 03 | **Clean Program Files** | Removes known slop from Program Files and ProgramData |
 | 04 | **Remove Copilot & Recall** | Disables Copilot, Recall, and Windows AI via registry + Edge flags |
 | 05 | **GPU Cache Cleanup** | Clears NVIDIA, AMD, Intel shader caches (often 5-10 GB) |
@@ -28,9 +28,6 @@ Phase 1 removes the slop. All scripts require admin and are launched via the con
 | 17 | **Block App Resurrection** | Prevents removed apps from coming back via services and registry |
 | 18 | **Clean AppData** | Removes remnants from uninstalled apps in AppData (runs last) |
 
-:::note
-Script numbering skips `02` -- gap from a renumber.
-:::
 
 ## Safety Guardrails
 
