@@ -1,6 +1,6 @@
 ---
 title: "Phase 1: Unslopify"
-description: 18 debloating scripts with risk matrix.
+description: 18 debloating scripts that remove Windows bloat.
 ---
 
 Phase 1 removes the slop. All scripts require admin and are launched via the console menu or GUI.
@@ -31,29 +31,6 @@ Phase 1 removes the slop. All scripts require admin and are launched via the con
 :::note
 Script numbering skips `02` -- gap from a renumber.
 :::
-
-## Risk Matrix
-
-| # | Script | Risk | Usually | What could break |
-|---|--------|------|---------|------------------|
-| 1 | Quick System Scan | None | Just prints a report | Nothing, read-only |
-| 2 | Telemetry CBS | **HIGH** | Works but slow, needs reboot | TrustedInstaller surgery, no undo |
-| 3 | Clean Program Files | Medium | Finds old junk, safe cleanup | Could hit active app data |
-| 4 | Copilot & Recall | Low | Clean removal, no side effects | Needs reboot |
-| 5 | GPU Caches | Low | Frees 1-5 GB, rebuilds fast | Brief shader stutter |
-| 6 | Remove OneDrive | **HIGH** | Clean uninstall | Cloud-only files lost if not synced |
-| 7 | Clean Start Menu | Low | Removes ad tiles | Pinned items reset |
-| 8 | DISM Cleanup | Medium | Recovers several GB | Loses Windows Update rollback |
-| 9 | Dead Default Apps | Low | Finds 10-30 dead entries | Rarely noticed |
-| 10 | AppX Bloatware | Medium | Removes 15-30 packages | Bing, Teams consumer gone |
-| 11 | Disable Tasks | Low | Disables ~20 tasks silently | Reversible via Task Scheduler |
-| 12 | Content Delivery | Low | Stops ghost app installs | Reversible |
-| 13 | Telemetry Services | Low | Stops background noise | Reversible |
-| 14 | Resistant Apps | Medium | Cleans out stubborn bloat | Teams, Widgets, Cortana gone |
-| 15 | Remove Edge | **HIGH** | Works fine, search improves | WebView2 kept, Edge features gone |
-| 16 | Extended Bloat | Medium | Removes 5-10 extra apps | Clipchamp, New Outlook gone |
-| 17 | Block Resurrection | Low | Prevents zombie apps | Reversible registry |
-| 18 | Clean AppData | Medium | Clears orphan caches | Run last after removals |
 
 ## Safety Guardrails
 
