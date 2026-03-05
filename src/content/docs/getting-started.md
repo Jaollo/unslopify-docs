@@ -14,11 +14,11 @@ Phase 3 (system intelligence) runs without admin.
 ## Download
 
 ```powershell
-git clone https://github.com/Jaollo/unslopify.git
-cd unslopify
+git clone https://github.com/Jaollo/unslopify-windows.git
+cd unslopify-windows
 ```
 
-Or download the ZIP from the [GitHub releases page](https://github.com/Jaollo/unslopify/releases).
+Or download the ZIP from the [GitHub releases page](https://github.com/Jaollo/unslopify-windows/releases).
 
 ## Running
 
