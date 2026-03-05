@@ -9,10 +9,10 @@ Phase 1 removes the slop. All scripts require admin and are launched via the con
 
 | # | Script | What it does |
 |---|--------|-------------|
-| 00 | **Remove Copilot & Recall** | Disables Copilot, Recall, and Windows AI via registry + Edge flags |
+| 00 | **Quick System Scan** | Quick system info + debloat status (read-only, no admin) |
 | 01 | **Deep Telemetry & CBS** | Uses TrustedInstaller to rip out CBS telemetry packages (reboot required) |
-| 02 | **Scan System** | Read-only scan of all areas for bloat (non-destructive) |
 | 03 | **Clean Program Files** | Removes known slop from Program Files and ProgramData |
+| 04 | **Remove Copilot & Recall** | Disables Copilot, Recall, and Windows AI via registry + Edge flags |
 | 05 | **GPU Cache Cleanup** | Clears NVIDIA, AMD, Intel shader caches (often 5-10 GB) |
 | 06 | **Remove OneDrive** | Uninstalls OneDrive, restores local folder paths |
 | 07 | **Clean Start Menu** | Removes empty folders, uninstall shortcuts, web links |
@@ -29,17 +29,17 @@ Phase 1 removes the slop. All scripts require admin and are launched via the con
 | 18 | **Clean AppData** | Removes remnants from uninstalled apps in AppData (runs last) |
 
 :::note
-Script numbering skips `04` -- it was moved to `18` (AppData cleanup runs last).
+Script numbering skips `02` -- gap from a renumber.
 :::
 
 ## Risk Matrix
 
 | # | Script | Risk | Usually | What could break |
 |---|--------|------|---------|------------------|
-| 1 | Copilot & Recall | Low | Clean removal, no side effects | Needs reboot |
+| 1 | Quick System Scan | None | Just prints a report | Nothing, read-only |
 | 2 | Telemetry CBS | **HIGH** | Works but slow, needs reboot | TrustedInstaller surgery, no undo |
-| 3 | System Scanner | None | Just prints a report | Nothing, read-only |
-| 4 | Clean Program Files | Medium | Finds old junk, safe cleanup | Could hit active app data |
+| 3 | Clean Program Files | Medium | Finds old junk, safe cleanup | Could hit active app data |
+| 4 | Copilot & Recall | Low | Clean removal, no side effects | Needs reboot |
 | 5 | GPU Caches | Low | Frees 1-5 GB, rebuilds fast | Brief shader stutter |
 | 6 | Remove OneDrive | **HIGH** | Clean uninstall | Cloud-only files lost if not synced |
 | 7 | Clean Start Menu | Low | Removes ad tiles | Pinned items reset |

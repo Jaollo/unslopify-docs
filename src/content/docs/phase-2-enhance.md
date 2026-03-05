@@ -1,6 +1,6 @@
 ---
 title: "Phase 2: Enhance"
-description: 9 standalone UX enhancement scripts.
+description: 8 standalone UX enhancement scripts.
 ---
 
 Phase 2 enhances the experience after debloating. These scripts run standalone (not through the launcher) and require admin.
@@ -16,12 +16,7 @@ Phase 2 enhances the experience after debloating. These scripts run standalone (
 | **05 - Appearance** | Enables dark mode + creates Master Panel shortcut |
 | **06 - Power Plan** | Unlocks the hidden Ultimate Performance power plan |
 | **07 - Folders** | Creates an organized Projects/Work/Personal folder structure |
-| **09 - Optimize Services** | Disables tracking services, sets unused services to Manual |
-| **10 - Image Viewer** | Registers nomacs as the default image viewer |
-
-:::note
-Script numbering skips `08` -- gap in the sequence.
-:::
+| **08 - Optimize Services** | Disables tracking services, sets unused services to Manual |
 
 ## Running
 
